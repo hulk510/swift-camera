@@ -11,14 +11,17 @@
 		1ED760FD27B6AC850050F6C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED760FC27B6AC850050F6C4 /* ContentView.swift */; };
 		1ED760FF27B6AC880050F6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED760FE27B6AC880050F6C4 /* Assets.xcassets */; };
 		1ED7610227B6AC880050F6C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED7610127B6AC880050F6C4 /* Preview Assets.xcassets */; };
+		1ED7610927B6AF470050F6C4 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED7610827B6AF470050F6C4 /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8D38C727BA650400E1A08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1ED760F727B6AC850050F6C4 /* carmera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carmera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED760FA27B6AC850050F6C4 /* carmeraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carmeraApp.swift; sourceTree = "<group>"; };
 		1ED760FC27B6AC850050F6C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1ED760FE27B6AC880050F6C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED7610127B6AC880050F6C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1ED7610827B6AF470050F6C4 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		1ED760F927B6AC850050F6C4 /* carmera */ = {
 			isa = PBXGroup;
 			children = (
+				1E8D38C727BA650400E1A08B /* Info.plist */,
 				1ED760FA27B6AC850050F6C4 /* carmeraApp.swift */,
 				1ED760FC27B6AC850050F6C4 /* ContentView.swift */,
+				1ED7610827B6AF470050F6C4 /* ImagePickerView.swift */,
 				1ED760FE27B6AC880050F6C4 /* Assets.xcassets */,
 				1ED7610027B6AC880050F6C4 /* Preview Content */,
 			);
@@ -109,6 +114,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 1ED760EE27B6AC850050F6C4;
 			productRefGroup = 1ED760F827B6AC850050F6C4 /* Products */;
@@ -138,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED760FD27B6AC850050F6C4 /* ContentView.swift in Sources */,
+				1ED7610927B6AF470050F6C4 /* ImagePickerView.swift in Sources */,
 				1ED760FB27B6AC850050F6C4 /* carmeraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +279,8 @@
 				DEVELOPMENT_TEAM = 3U5876YZ4F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = carmera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影しちゃうよー";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +310,8 @@
 				DEVELOPMENT_TEAM = 3U5876YZ4F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = carmera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影しちゃうよー";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
