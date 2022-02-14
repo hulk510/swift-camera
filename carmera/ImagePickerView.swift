@@ -33,8 +33,10 @@ struct ImagePickerView: UIViewControllerRepresentable {
             // _は引数名を省略してるだから多分pickerが引数でそのあとは型やと思う。
             // 省略する意味はなんなのか？
             _ picker: UIImagePickerController,
-            didFinishPickingMediaWithInfo info:
+            didFinishPickingMediaWithInfo info: // このinfoちゃんとしてないと写真取れない
             [UIImagePickerController.InfoKey : Any]) {
+                
+                // ここで取った写真をcaptureImageに保存
                 if let originalImage = info[UIImagePickerController.InfoKey.originalImage]
                     as? UIImage {
                     parent.captureImage = originalImage

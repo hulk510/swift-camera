@@ -19,6 +19,7 @@ struct ContentView: View {
         VStack {
             Spacer()
             
+            // captureImageがあればviewで表示する
             if let unwrapCaptureImage = captureImage {
                 Image(uiImage: unwrapCaptureImage)
                     .resizable()
@@ -31,6 +32,8 @@ struct ContentView: View {
                 
                 if  UIImagePickerController.isSourceTypeAvailable(.camera) {
                     print("カメラは利用できます")
+                    // isShowSheetをtrueにすれば.sheetがしたから出てくる。
+                    // そこに表示するviewにImagePickerViewを設定することでカメラを表示するviewを表示するって感じか。
                     isShowSheet = true
                 } else {
                     print("カメラは利用できません")
