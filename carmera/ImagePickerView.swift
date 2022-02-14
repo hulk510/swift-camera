@@ -58,6 +58,10 @@ struct ImagePickerView: UIViewControllerRepresentable {
         Coordinator(self) // selfはこの場合 -> ImagePickerView
     }
     
+    // makeとupdateはシェアボタンでも使ってるがcoordinatorを使うのはdelegateを使うから
+    // make, updateがいるのはUIViewControllerRepresentableで必要みたい。
+    // だからどっちもこれだけは実装してる。coordinatorはやっぱりdelegate使うからか
+    // っていうかこれ使うだけで勝手にしたから出てくるし、それ以外のボタンとか使わなくても勝手に出てくるってのがすごいな
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePickerView>) -> UIImagePickerController {
         let myImagePickerController = UIImagePickerController()
         myImagePickerController.sourceType = .camera
