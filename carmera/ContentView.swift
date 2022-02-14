@@ -14,6 +14,7 @@ struct ContentView: View {
     
     @State var isShowSheet = false
     @State var captureImage: UIImage? = nil
+    @State var isShowActivity = false
     
     var body: some View {
         VStack {
@@ -52,6 +53,25 @@ struct ContentView: View {
                     isShowSheet: $isShowSheet,
                     captureImage: $captureImage
                     )
+                }
+            Button(action: {
+                // これもunwrapの一つで多分変数に入れれるってことが安全に使うってことなんやろな
+                // 一応型指定してるからその型が入ってるってことを証明する。
+                // これgoとかでも使えそうやな。別にnil比較でも良さそうやけど？
+                if let _ = captureImage {
+                    isShowActivity = true
+                }
+            }) {
+                Text("SNSに投稿する")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .multilineTextAlignment(.center)
+                    .background(Color.blue)
+                    .foregroundColor(Color.white)
+            }.padding()
+                .sheet(isPresented: $isShowActivity) {
+                    // shareItems: [Any]に入れるために[captureImage]になってる。
+                    ActivityView(shareItems: [captureImage!])
                 }
         }
     }
