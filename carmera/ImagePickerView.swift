@@ -46,6 +46,10 @@ struct ImagePickerView: UIViewControllerRepresentable {
         
         // delegateメソッド、キャンセル時に呼ばれる。
         // 必ず必要らしいけどなんでこれが必ず必要になるのか謎。
+        // ちなみにこの_やけどこれはラベル名の省略
+        // imagePickerControllerDidCancel("somepicker")って感じでラベルが必要なのに省略できる感じ
+        // つまり_はラベル名（action:とかcontext:とか）それを書かずにpicker:（これは変数名）でUIImagePickerControllerは型
+        // 呼び出す側にどう見えるか？を_で定義する感じ。
         func imagePickerControllerDidCancel(
             _ picker: UIImagePickerController) {
                 parent.isShowSheet = false
