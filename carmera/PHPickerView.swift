@@ -33,10 +33,11 @@ struct PHPickerView: UIViewControllerRepresentable {
                             print("使える写真がないよ！")
                         }
                     }
+                    parent.isShowSheet = true
                 } else {
                     print("選択された写真はないよ")
+                    parent.isShowSheet = false
                 }
-                parent.isShowSheet = false
             }
     }
     func makeCoordinator() -> Coordinator {

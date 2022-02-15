@@ -41,7 +41,7 @@ struct ImagePickerView: UIViewControllerRepresentable {
                     as? UIImage {
                     parent.captureImage = originalImage
                 }
-                parent.isShowSheet = false
+                parent.isShowSheet = true
             }
         
         // delegateメソッド、キャンセル時に呼ばれる。
