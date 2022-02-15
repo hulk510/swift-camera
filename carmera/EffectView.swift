@@ -26,7 +26,36 @@ struct EffectView: View {
             Spacer()
             
             Button(action: {
+                let filterName = "CIPhotoEffectInstant"
+                let rotate = captureImage.imageOrientation // CIImageに変換するときに失われるから回転情報を保持しておく
+                let inputImage = CIImage(image: captureImage)
                 
+                // guardもアンラップするためのもの
+                // if let ~ はアンラップできたら実行でguard elseはアンラップできなかったら実行って感じらしい。
+                // なのでアンラップできなければreturnして戻るって感じやな。
+                guard let effectFilter = CIFilter(name: filterName) else {
+                    return
+                }
+                
+                effectFilter.setDefaults() // これで初期化してるみたい。いいなこのinitのやり方デフォルト値を指定することで多分initの時もやってるやろうけどデフォ血も用意しといてあげるのはいいかも。
+                effectFilter.setValue(inputImage, forKey: kCIInputImageKey)
+                guard let outputImage = effectFilter.outputImage else {
+                    return
+                }
+                
+                // これはフィルタ加工するための作業領域を確保するインスタンスらしい
+                // 実際に来れないとcreateCGImage作れないわけやし
+                let ciContext = CIContext(options: nil)
+                
+                // ちなみにこのcreateCGImageのreturn値がCGImage?になってるからアンラップしてるって感じっぽい。
+                // func createCGImage(_ image: CIImage, from fromRect: CGRect) -> CGImage?
+                guard let cgImage = ciContext.createCGImage(
+                    outputImage, from: outputImage.extent)
+                else {
+                    return
+                }
+                
+                showImage = UIImage(cgImage: cgImage, scale: 1.0, orientation: rotate)
             }) {
                 Text("エフェクト")
                     .frame(maxWidth: .infinity)
@@ -38,7 +67,7 @@ struct EffectView: View {
             .padding()
             
             Button(action: {
-                
+                isShowActivity = true
             }) {
                 Text("シェア")
                     .frame(maxWidth: .infinity)
@@ -47,10 +76,14 @@ struct EffectView: View {
                     .background(Color.blue)
                     .foregroundColor(Color.white)
             }
+            // $を渡すことでstateの参照を渡せるからこんな感じにフラグとして使えるって感じみたい
+            .sheet(isPresented: $isShowActivity) {
+                ActivityView(shareItems: [showImage!])
+            }
             .padding()
             
             Button(action: {
-                
+                isShowSheet = false
             }) {
                 Text("閉じる")
                     .frame(maxWidth: .infinity)
