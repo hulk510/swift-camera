@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AB88F069-C410-4ABE-837A-09A8D55DD7F0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49D1C981-F68D-455F-B77D-657E6BB19F55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "carmera/PHPickerView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "Coordinator"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "49D1C981-F68D-455F-B77D-657E6BB19F55 - ff26f11e89c0da1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "carmera.PHPickerView.Coordinator.parent.getter : carmera.PHPickerView"
+                  moduleName = "carmera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gotouharuka/Projects/ios/carmera/carmera/PHPickerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "202">
+               </Location>
+               <Location
+                  uuid = "49D1C981-F68D-455F-B77D-657E6BB19F55 - 81aed6e9612328ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "carmera.PHPickerView.Coordinator.parent.setter : carmera.PHPickerView"
+                  moduleName = "carmera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gotouharuka/Projects/ios/carmera/carmera/PHPickerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "49D1C981-F68D-455F-B77D-657E6BB19F55 - 6a042a2ebdd4136c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "carmera.PHPickerView.Coordinator.parent.modify : carmera.PHPickerView"
+                  moduleName = "carmera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gotouharuka/Projects/ios/carmera/carmera/PHPickerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "49D1C981-F68D-455F-B77D-657E6BB19F55 - 7022c9e933024f7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "carmera.PHPickerView.Coordinator.parent.modify : carmera.PHPickerView with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "carmera"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gotouharuka/Projects/ios/carmera/carmera/PHPickerView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

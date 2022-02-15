@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E8D38C927BA72C900E1A08B /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8D38C827BA72C900E1A08B /* ActivityView.swift */; };
+		1E8D38CB27BA851900E1A08B /* PHPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8D38CA27BA851900E1A08B /* PHPickerView.swift */; };
 		1ED760FB27B6AC850050F6C4 /* carmeraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED760FA27B6AC850050F6C4 /* carmeraApp.swift */; };
 		1ED760FD27B6AC850050F6C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED760FC27B6AC850050F6C4 /* ContentView.swift */; };
 		1ED760FF27B6AC880050F6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED760FE27B6AC880050F6C4 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		1E8D38C727BA650400E1A08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1E8D38C827BA72C900E1A08B /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		1E8D38CA27BA851900E1A08B /* PHPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerView.swift; sourceTree = "<group>"; };
 		1ED760F727B6AC850050F6C4 /* carmera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carmera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED760FA27B6AC850050F6C4 /* carmeraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carmeraApp.swift; sourceTree = "<group>"; };
 		1ED760FC27B6AC850050F6C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				1ED760FC27B6AC850050F6C4 /* ContentView.swift */,
 				1E8D38C827BA72C900E1A08B /* ActivityView.swift */,
 				1ED7610827B6AF470050F6C4 /* ImagePickerView.swift */,
+				1E8D38CA27BA851900E1A08B /* PHPickerView.swift */,
 				1ED760FE27B6AC880050F6C4 /* Assets.xcassets */,
 				1ED7610027B6AC880050F6C4 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8D38CB27BA851900E1A08B /* PHPickerView.swift in Sources */,
 				1ED760FD27B6AC850050F6C4 /* ContentView.swift in Sources */,
 				1E8D38C927BA72C900E1A08B /* ActivityView.swift in Sources */,
 				1ED7610927B6AF470050F6C4 /* ImagePickerView.swift in Sources */,
